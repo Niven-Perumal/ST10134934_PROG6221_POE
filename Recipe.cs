@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace ST10134934_PROG6221_PartOne
 {
-     class Recipe
+    public class Recipe
     {
-//recipe class here
+
+
+
+
+
 
     }
 }
