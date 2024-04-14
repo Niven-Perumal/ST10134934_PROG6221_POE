@@ -258,7 +258,10 @@ namespace ST10134934_PROG6221_PartOne
                         }
                         break;
                     default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("----------------------------------------");
                         Console.WriteLine("Select a valid option");
+                        Console.WriteLine("----------------------------------------");
                         break;
 
                 }
