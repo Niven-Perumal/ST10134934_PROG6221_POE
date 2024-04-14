@@ -298,6 +298,110 @@ namespace ST10134934_PROG6221_PartOne
 
 
 
+        //This is a mehtod that will allow the user to view their recipe
+        public void viewRecipe(ArrayList scaledIngQuanArrayList, double sumOne, int userIngAmt, int ingNum, ArrayList recipeNameArrayList, ArrayList ingNameArrayList, ArrayList ingQuanArrayList, ArrayList ingUnitArrayList, ArrayList stepArrayList)
+        {
+
+            string[] name = (string[])recipeNameArrayList.ToArray(typeof(string));
+            double[] ingQuanArray = (double[])ingQuanArrayList.ToArray(typeof(double));
+
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            //if there is a recipe stored and the ingredients have been scaled, the scaled values will be displayed
+            if (scaledIngQuanArrayList.Count != 0)
+            {
+
+                Console.WriteLine("----------------------------------------");
+                var eleRec = recipeNameArrayList[0];
+
+                Console.WriteLine($"Recipe name: {eleRec}");
+                Console.WriteLine($"Ingredients \t\t Quantity");
+
+
+                int count = ingNameArrayList.Count;
+
+                for (int i = 0; i < count; i++) //displays the recipe ingredients and scaled quantities/unit of measurements
+                {
+                    int ingCount = i + 1;
+                    var eleOne = ingNameArrayList[i];
+                    var eleTwo = scaledIngQuanArrayList[i];
+                    var eleThree = ingUnitArrayList[i];
+
+                    Console.WriteLine($"{ingCount}: {eleOne} \t\t {eleTwo} {eleThree}");
+                }
+
+
+
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine($"Steps for {eleRec} recipe \n ");
+
+                int count2 = stepArrayList.Count;
+                for (int i = 0; i < count2; i++) //displays the recipe steps
+                {
+                    int stepCount = i + 1;
+                    var eleStep = stepArrayList[i];
+                    Console.WriteLine($"Step {stepCount}: {eleStep}");
+
+                }
+                Console.WriteLine("----------------------------------------");
+
+
+            }
+
+
+            // if there is a recipe stored and the ingredients have not been scaled this will be displayed
+            if (recipeNameArrayList.Count != 0 && scaledIngQuanArrayList.Count == 0)
+            {
+                Console.WriteLine("----------------------------------------");
+                var eleRec = recipeNameArrayList[0];
+
+                Console.WriteLine($"Recipe name: {eleRec}");
+                Console.WriteLine($"Ingredients \t\t Quantity");
+
+
+                int count = ingNameArrayList.Count;
+
+                for (int i = 0; i < count; i++) //displays the recipe ingredients and quantites/unit of measurements
+                {
+                    int ingCount = i + 1;
+                    var eleOne = ingNameArrayList[i];
+                    var eleTwo = ingQuanArrayList[i];
+                    var eleThree = ingUnitArrayList[i];
+
+                    Console.WriteLine($"{ingCount}: {eleOne} \t\t {eleTwo} {eleThree}");
+                }
+
+
+
+
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine($"Steps for {eleRec} recipe \n ");
+
+                int count2 = stepArrayList.Count;
+                for (int i = 0; i < count2; i++)
+                {
+                    int stepCount = i + 1;
+                    var eleStep = stepArrayList[i];
+                    Console.WriteLine($"Step {stepCount}: {eleStep}");
+
+                }
+
+                Console.WriteLine("----------------------------------------");
+            }
+
+
+            //if there is no recipe stored this message will be displayed
+            if (recipeNameArrayList.Count == 0 && scaledIngQuanArrayList.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("No recipe to display");
+                Console.WriteLine("----------------------------------------");
+                Console.ResetColor();
+            }
+
+            Console.ResetColor();
+        }
 
 
 
