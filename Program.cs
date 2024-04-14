@@ -6,7 +6,7 @@ namespace ST10134934_PROG6221_PartOne
     {
         static void Main(string[] args)
         {
-
+            //Values that are declared to be used
             string ingName = null, unitMea = null, recipeName = null;
             double ingQuan = 0;
             string userOp;
@@ -15,7 +15,7 @@ namespace ST10134934_PROG6221_PartOne
 
             double sumOne = 0.0;
 
-
+            //ArrayLists declared that will be used to store user input
             ArrayList ingNameArrayList = new ArrayList();
             ArrayList ingQuanArrayList = new ArrayList();
             ArrayList ingUnitArrayList = new ArrayList();
