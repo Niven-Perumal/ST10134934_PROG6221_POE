@@ -405,6 +405,46 @@ namespace ST10134934_PROG6221_PartOne
 
 
 
+        //This is a method that will allow the user to delete their stored recipe
+        public void deleteRecipe(ArrayList scaledIngQuanArrayList, ArrayList recipeNameArrayList, ArrayList ingNameArrayList, ArrayList ingQuanArrayList, ArrayList ingUnitArrayList, ArrayList stepArrayList)
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Are sure you want to delete recipe?"); //this asks the user if they want to delete recipe
+            Console.WriteLine("1 - Yes");
+            Console.WriteLine("2 - No");
+
+            string userOp = Console.ReadLine();
+            int UserOp = int.Parse(userOp);
+
+            switch (UserOp)
+            {
+                //if yes is selected the recipe will be deleted
+                case 1:
+                    Console.WriteLine("Yes selected");
+                    Console.WriteLine("----------------------------------------");
+                    recipeNameArrayList.Clear();
+                    ingNameArrayList.Clear();
+                    ingQuanArrayList.Clear();
+                    ingUnitArrayList.Clear();
+                    stepArrayList.Clear();
+                    scaledIngQuanArrayList.Clear();
+
+                    break;
+                case 2: //if no is selected the recipe will not be deleted
+                    Console.WriteLine("No selected");
+                    Console.WriteLine("----------------------------------------");
+                    break;
+                default:
+                    Console.WriteLine("select a valid option");
+                    break;
+
+            }
+
+            Console.ResetColor();
+        }
+
+
 
 
     }
