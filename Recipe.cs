@@ -449,3 +449,8 @@ namespace ST10134934_PROG6221_PartOne
 
     }
 }
+
+
+//Code attribution for changing text colour in app https://www.geeksforgeeks.org/c-sharp-how-to-change-foreground-color-of-text-in-console/
+//Code attribution for "deleting" all values in ArrayList https://www.geeksforgeeks.org/c-sharp-remove-all-elements-from-the-arraylist/
+//Code attribution for switch cases used in app menus https://www.geeksforgeeks.org/switch-statement-in-c-sharp/
