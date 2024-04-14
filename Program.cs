@@ -24,7 +24,10 @@ namespace ST10134934_PROG6221_PartOne
 
             ArrayList scaledIngQuanArrayList = new ArrayList();
 
+            //object to call methods from Recipe.cs
+            Recipe recipe = new Recipe();
 
+          
 
 
 
