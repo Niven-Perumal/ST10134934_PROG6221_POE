@@ -272,6 +272,29 @@ namespace ST10134934_PROG6221_PartOne
 
 
 
+        //This is a method to allow the user to reset the scaled ingredients amounts back to their original amounts
+        public void resetRecipe(ArrayList scaledIngQuanArrayList, string ingName, double ingQuan, string unitMea, int userIngAmt, int ingNum, ArrayList ingNameArrayList, ArrayList ingQuanArrayList, ArrayList ingUnitArrayList, ArrayList stepArrayList)
+        {
+            //If there is a recipe stored, then the ingredients will be reset to their orginal values (before scaled)
+            if (scaledIngQuanArrayList.Count != 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                scaledIngQuanArrayList.Clear();
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("Recipe ingredient values have been reset to original ");
+                Console.WriteLine("----------------------------------------");
+                Console.ResetColor();
+            }
+            else //if there is no recipe stored then this message will be displayed
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("No recipe ingredients to reset");
+                Console.WriteLine("----------------------------------------");
+                Console.ResetColor();
+            }
+
+        }
 
 
 
