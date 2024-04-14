@@ -170,6 +170,108 @@ namespace ST10134934_PROG6221_PartOne
 
 
 
+        //This is a method to allow the user to scale their recipe ingredients by 0.5, 2 and 3
+        public void scaleRecipe(ArrayList scaledIngQuanArrayList, double sumOne, ArrayList recipeNameArrayList, ArrayList ingNameArrayList, ArrayList ingQuanArrayList, ArrayList ingUnitArrayList)
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Are sure you want to scale recipe?"); //asks user if they want to scale ingredients
+            Console.WriteLine("1 - Yes");
+            Console.WriteLine("2 - No");
+
+            string userOp = Console.ReadLine();
+            int UserOp = int.Parse(userOp);
+
+            //switch case displaying if yes or no selected
+            switch (UserOp)
+            {
+
+                case 1:
+                    Console.WriteLine("Yes selected");
+                    break;
+                case 2:
+                    Console.WriteLine("No selected");
+                    break;
+                default:
+                    Console.WriteLine("Select a valid option");
+                    break;
+
+            }
+            Console.WriteLine("----------------------------------------");
+            Console.ResetColor();
+
+            //values for the ingredients to be multiplied by
+            double half = 0.5;
+            double twice = 2.0;
+            double thrice = 3.0;
+
+            //if the user selects yes this will run and the user will be given a choice to scale their recipe ingredients by the desired values
+            if (UserOp == 1)
+            {
+
+                //    Console.WriteLine("----------------------------------------");
+                Console.WriteLine("Select value to scale recipe by");
+                Console.WriteLine("1 - 0,5");
+                Console.WriteLine("2 - 2");
+                Console.WriteLine("3 - 3");
+
+                string userOp2 = Console.ReadLine();
+                int UserOp2 = int.Parse(userOp2);
+
+                switch (UserOp2)
+                {
+
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("----------------------------------------");
+                        Console.WriteLine("Scaled by 0,5");
+                        Console.WriteLine("----------------------------------------");
+                        scaledIngQuanArrayList.Clear();
+                        foreach (double val in ingQuanArrayList) //updates all values in the new arrayList
+                        {
+                            sumOne = val * half;
+                            scaledIngQuanArrayList.Add(sumOne);
+                        }
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("----------------------------------------");
+                        Console.WriteLine("Scaled by 2");
+                        Console.WriteLine("----------------------------------------");
+                        scaledIngQuanArrayList.Clear();
+                        foreach (double val in ingQuanArrayList) //updates all values in the new arrayList
+                        {
+                            sumOne = val * twice;
+                            scaledIngQuanArrayList.Add(sumOne);
+                        }
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("----------------------------------------");
+                        Console.WriteLine("Scaled by 3");
+                        Console.WriteLine("----------------------------------------");
+                        scaledIngQuanArrayList.Clear();
+                        foreach (double val in ingQuanArrayList) //updates all values in the new arrayList
+                        {
+                            sumOne = val * thrice;
+                            scaledIngQuanArrayList.Add(sumOne);
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Select a valid option");
+                        break;
+
+                }
+
+            }
+            Console.ResetColor();
+
+
+
+        }
+
+
+
 
 
 
