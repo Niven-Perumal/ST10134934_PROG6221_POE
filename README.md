@@ -1,4 +1,4 @@
-What does the project do?
+What does the project do/How to use it?
 This project was created to be a recipe storage application. In the application, the user will be prompted to choose from various menu options such as 
 add, view, scale, reset and delete recipe and exit program. 
 Additionally, each menu option calls and runs the appropriate method for the user to input their values to be stored in the application.
