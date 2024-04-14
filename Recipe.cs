@@ -131,6 +131,43 @@ namespace ST10134934_PROG6221_PartOne
 
 
 
+        //This is a method to allow the user to input their steps for their recipe
+        public void stepsRecipe(int userIngAmt, int ingNum, ArrayList stepArrayList, ArrayList recipeNameArrayList)
+        {
+            //this  will run the method if their is no recipe currently stored. If a recipe is stored this will not run.
+            if (stepArrayList.Count == 0)
+            {
+                Console.WriteLine("How many steps are in your recipe?");
+                while (!int.TryParse(Console.ReadLine(), out userIngAmt) || userIngAmt <= 0) //displays error message if invalid input is entered
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Please enter a valid number of steps.");
+                    Console.ResetColor();
+                }
+
+                Console.WriteLine("----------------------------------------");
+
+                for (ingNum = 0; ingNum < userIngAmt; ingNum++) //counts number of steps entered by user
+                {
+                    int sum = ingNum + 1;
+                    Console.WriteLine("Enter step" + " " + sum + ":"); //user enters recipe step
+                    string step = Console.ReadLine();
+
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("----------------------------------------");
+                    Console.WriteLine("Step entered ");
+                    Console.WriteLine("----------------------------------------");
+                    Console.ResetColor();
+
+                    stepArrayList.Add(step);
+
+                }
+
+            }
+
+
+        }
+
 
 
 
