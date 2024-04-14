@@ -10,29 +10,38 @@ namespace ST10134934_PROG6221_PartOne
     public class Recipe
     {
 
+        //This is a method to input a recipe to be stored
         public void addRecipe(string recipeName, string ingName, double ingQuan, string unitMea, int userIngAmt, int ingNum, ArrayList recipeNameArrayList, ArrayList ingNameArrayList, ArrayList ingQuanArrayList, ArrayList ingUnitArrayList)
         {
+            //this will display a message if a recipe has already been stored
             if (recipeNameArrayList.Count != 0)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("----------------------------------------");
                 Console.WriteLine("Cannot add another recipe until existing recipe is deleted.");
                 Console.WriteLine("----------------------------------------");
+                Console.ResetColor();
             }
-            else
+            else //this runs the add recipe method if there is no recipe currently stored 
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("----------------------------------------");
                 Console.WriteLine("Add Recipe selected");
                 Console.WriteLine("----------------------------------------");
+                Console.ResetColor();
                 Console.WriteLine("Enter name of recipe");
                 recipeName = Console.ReadLine();
 
                 Console.WriteLine("How many Ingredients are in your recipe?");
-                while (!int.TryParse(Console.ReadLine(), out userIngAmt))
+                while (!int.TryParse(Console.ReadLine(), out userIngAmt) || userIngAmt <= 0) //displays error message if invaild input is entered
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Please enter a valid number of ingredients.");
+                    Console.ResetColor();
                 }
 
 
-                for (ingNum = 0; ingNum < userIngAmt; ingNum++)
+                for (ingNum = 0; ingNum < userIngAmt; ingNum++) //counts number of ingredients input by user
                 {
                     int sum = ingNum + 1;
 
@@ -40,9 +49,11 @@ namespace ST10134934_PROG6221_PartOne
                     ingName = Console.ReadLine();
 
                     Console.WriteLine("Enter Quantity of Ingredient:");
-                    while (!double.TryParse(Console.ReadLine(), out ingQuan))
+                    while (!double.TryParse(Console.ReadLine(), out ingQuan) || ingQuan <= 0.0) //displays error message if invaild input is entered
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Please enter a valid quantity amount.");
+                        Console.ResetColor();
                     }
 
                     Console.WriteLine("Select unit of measurement:");
@@ -56,11 +67,14 @@ namespace ST10134934_PROG6221_PartOne
 
                     //   unitMea = Console.ReadLine();
                     int UserOp = 0;
-                    while (!int.TryParse(Console.ReadLine(), out UserOp))
+                    while (!int.TryParse(Console.ReadLine(), out UserOp) || UserOp > 7 || UserOp <= 0) //displays error mesasge if invaild input is entered
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Please enter a valid unit of measurement.");
+                        Console.ResetColor();
                     }
 
+                    //switch case that allows the user to select unit of measurement for ingredients
                     switch (UserOp)
                     {
 
@@ -99,12 +113,13 @@ namespace ST10134934_PROG6221_PartOne
                     }
 
 
-
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("----------------------------------------");
                     Console.WriteLine("Ingredient entered ");
                     Console.WriteLine("----------------------------------------");
+                    Console.ResetColor();
 
-
+                    //Adds values input by user into arrayLists
                     recipeNameArrayList.Add(recipeName);
                     ingNameArrayList.Add(ingName);
                     ingQuanArrayList.Add(ingQuan);
@@ -113,6 +128,14 @@ namespace ST10134934_PROG6221_PartOne
                 }
             }
         }
+
+
+
+
+
+
+
+
 
 
 
