@@ -31,22 +31,22 @@ This project was created to be a console-based Visual Studio recipe storage appl
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
 -	Follow the menu prompts and select a number suitable number listed (1-6)
 *	**1 – Add Recipe:**
-  -	Enter the name of the recipe.
-  -	Enter the number of ingredients to be used in the recipe.
-  -	Enter the name of the ingredient.
-  -	Enter the quantity of the ingredient.
-  -	Enter the unit of measurement used for the ingredient.
+    - Enter the name of the recipe.
+    - Enter the number of ingredients to be used in the recipe.
+    - Enter the name of the ingredient.
+    - Enter the quantity of the ingredient.
+    -Enter the unit of measurement used for the ingredient.
 *	**2 – View Recipe:**
-  -	This option will display the recipe name and the ingredients with the original ingredient quantities and steps if the recipe has not been scaled.
-  -	If the recipe has been scaled the new ingredient quantities will be displayed.
+    -	This option will display the recipe name and the ingredients with the original ingredient quantities and steps if the recipe has not been scaled.
+    -	If the recipe has been scaled the new ingredient quantities will be displayed.
 *	**3 – Scale Recipe:**
-  -	This option provides the user with three options, scale recipe quantities by 0.5, 2 or 3. These options will multiply the user-entered ingredient quantities.
+    -	This option provides the user with three options, scale recipe quantities by 0.5, 2 or 3. These options will multiply the user-entered ingredient quantities.
 *	**4 – Reset Ingredients to original amount:** 
-  -	This option will reset the scaled ingredient quantities back to the original user-entered quantities.
+    -	This option will reset the scaled ingredient quantities back to the original user-entered quantities.
 *	**5 – Delete Recipe:** 
-  -	This option will remove/clear/delete the entire recipe that has been entered and stored by the user.
+    -	This option will remove/clear/delete the entire recipe that has been entered and stored by the user.
 *	**6 – Exit program:** 
-  -	This option will stop running the program.
+    -	This option will stop running the program.
 
 # **GitHub repository link**
 https://github.com/Niven-Perumal/ST10134934_PROG6221_PartOne.git
