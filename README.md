@@ -1,8 +1,8 @@
-# Project Title
+# **Project Title**
 PROG6221 Recipe Storage Application
 
 
-# Table of Contents
+# **Table of Contents**
 - [Purpose of project](#Purposeofproject)
 - [How to compile and run the application](#Howtocompileandruntheapplication)
 - [How to use the Recipe Application](#HowtousetheRecipeApplication)
@@ -11,10 +11,10 @@ PROG6221 Recipe Storage Application
 - [Licenses](#licenses)
 
 
-# Purpose of project
+# **Purpose of project**
 This project was created to be a console-based Visual Studio recipe storage application. This application allows you to easily keep track of your recipes and effortlessly perform functions such as add recipe ingredients, quantities, units of measurements and steps, view the recipe ingredients, quantities, units of measurements and steps in a clear format, scale the recipe ingredients depending on your quantity needs, reset the scaled recipe ingredients to their original values, delete the recipe stored in the application and exit the program. Additionally, to make recipe storage, management, and manipulation easier the user is provided with clear, user-friendly, and visually pleasing menu prompts that efficiently guide the user through the application and its functions.
 
-# How to compile and run the application
+# **How to compile and run the application**
 Requirements to compile and run the project:
 •	Have Visual Studio installed.
 How to download the project onto your machine:
@@ -27,10 +27,10 @@ How to open/run the project:
 •	Open the file named “ST10134934_PROG6221_PartOne.”
 •	Either select ST10134934_PROG6221_PartOne.sln to open and run the project or open the project using Visual Studio.
 
-# How to use the Recipe Application
+# **How to use the Recipe Application**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
-	Follow the menu prompts and select a number suitable number listed (1-6)
-	1 – Add Recipe: 
+-	Follow the menu prompts and select a number suitable number listed (1-6)
+#^ -	1 – Add Recipe: 
 	Enter the name of the recipe.
 	Enter the number of ingredients to be used in the recipe.
 	Enter the name of the ingredient.
@@ -48,7 +48,7 @@ After the application/project has been opened in Visual Studio the following sho
 	6 – Exit program: 
 	This option will stop running the program.
 
-# GitHub repository link
+# **GitHub repository link**
 https://github.com/Niven-Perumal/ST10134934_PROG6221_PartOne.git
 
 # Contribution
