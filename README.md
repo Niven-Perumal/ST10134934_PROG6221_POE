@@ -30,7 +30,7 @@ How to open/run the project:
 # **How to use the Recipe Application**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
 -	Follow the menu prompts and select a number suitable number listed (1-6)
-#^ -	1 – Add Recipe: 
+*	1 – Add Recipe: 
 	Enter the name of the recipe.
 	Enter the number of ingredients to be used in the recipe.
 	Enter the name of the ingredient.
