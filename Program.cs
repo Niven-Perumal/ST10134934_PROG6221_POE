@@ -40,7 +40,7 @@ namespace ST10134934_PROG6221_PartOne
                     Console.WriteLine("1 - Add Recipe");
                     Console.WriteLine("2 - View Recipe");
                     Console.WriteLine("3 - Scale Recipe");
-                    Console.WriteLine("4 - Rest Ingredients to original amount");
+                    Console.WriteLine("4 - Reset Ingredients to original amount");
                     Console.WriteLine("5 - Delete Recipe");
                     Console.WriteLine("6 - Exit program");
                     Console.WriteLine("----------------------------------------");
