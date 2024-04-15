@@ -15,17 +15,17 @@ PROG6221 Recipe Storage Application
 This project was created to be a console-based Visual Studio recipe storage application. This application allows you to easily keep track of your recipes and effortlessly perform functions such as add recipe ingredients, quantities, units of measurements and steps, view the recipe ingredients, quantities, units of measurements and steps in a clear format, scale the recipe ingredients depending on your quantity needs, reset the scaled recipe ingredients to their original values, delete the recipe stored in the application and exit the program. Additionally, to make recipe storage, management, and manipulation easier the user is provided with clear, user-friendly, and visually pleasing menu prompts that efficiently guide the user through the application and its functions.
 
 # **How to compile and run the application**
-**Requirements to compile and run the project:**
-*	Have Visual Studio installed.
-**How to download the project onto your machine**:
-*	Navigate to the GitHub repository using the projects repository link.
-*	Select the green code tab on the repository home page.
-*	Select on “Local” tab.
-*	Select “Download Zip”
-**How to open/run the project**:
-*	Unzip/extract all files from the downloaded zip folder.
-*	Open the file named “ST10134934_PROG6221_PartOne.”
-*	Either select ST10134934_PROG6221_PartOne.sln to open and run the project or open the project using Visual Studio.
+* **Requirements to compile and run the project:**
+    *	Have Visual Studio installed.
+* **How to download the project onto your machine**:
+    *	Navigate to the GitHub repository using the projects repository link.
+    *	Select the green code tab on the repository home page.
+    *	Select on “Local” tab.
+    *	Select “Download Zip”
+* **How to open/run the project**:
+    *	Unzip/extract all files from the downloaded zip folder.
+    *	Open the file named “ST10134934_PROG6221_PartOne.”
+    *	Either select ST10134934_PROG6221_PartOne.sln to open and run the project or open the project using Visual Studio.
 
 # **How to use the Recipe Application**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
