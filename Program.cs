@@ -79,7 +79,9 @@ namespace ST10134934_PROG6221_PartOne
                             break;
                         default:
                             Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("----------------------------------------");
                             Console.WriteLine("Enter a valid operation");
+                            Console.WriteLine("----------------------------------------");
                             Console.ResetColor();
                             break;
                     }
@@ -90,8 +92,12 @@ namespace ST10134934_PROG6221_PartOne
                 }
                 catch (FormatException)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("----------------------------------------");
                     Console.WriteLine("Invaild operation selected");
                     Console.WriteLine("----------------------------------------");
+                    Console.ResetColor();
+
                 }
 
             }
