@@ -31,11 +31,11 @@ How to open/run the project:
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
 -	Follow the menu prompts and select a number suitable number listed (1-6)
 *	**1 – Add Recipe:**
-  *^	Enter the name of the recipe.
-  *^	Enter the number of ingredients to be used in the recipe.
-  *^	Enter the name of the ingredient.
-  *^	Enter the quantity of the ingredient.
-  *^	Enter the unit of measurement used for the ingredient.
+  ..*	Enter the name of the recipe.
+  ..*	Enter the number of ingredients to be used in the recipe.
+  ..*	Enter the name of the ingredient.
+  ..*	Enter the quantity of the ingredient.
+  ..*	Enter the unit of measurement used for the ingredient.
 *	**2 – View Recipe:**
   *	This option will display the recipe name and the ingredients with the original ingredient quantities and steps if the recipe has not been scaled.
   *	If the recipe has been scaled the new ingredient quantities will be displayed.
