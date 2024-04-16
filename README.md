@@ -7,6 +7,7 @@ PROG6221 Recipe Storage Application
 - [How to compile and run the application](#howtocompileandruntheapplication)
 - [How to use the Recipe Application](#howtousetheRecipeApplication)
 - [GitHub repository link](#gitHubrepositorylink)
+- [Loom video link for demo of application](#loomvideolinkfordemoofapplication)
 - [Contribution](#contribution)
 - [Licenses](#licenses)
 
@@ -55,6 +56,9 @@ After the application/project has been opened in Visual Studio the following sho
 
 # **GitHub repository link**
 https://github.com/Niven-Perumal/ST10134934_PROG6221_PartOne.git
+
+# **Loom video link for demo of application**
+https://www.loom.com/share/7da5a9104c2c417789fe20a43777944a?sid=ed724ffb-eb1e-4045-8f8c-efefbca1ee87
 
 # Contribution
 BCA2 student Niven Perumal developed this PROG6221 POE Part One Recipe Application. Additionally, code attribution and references from other developers, websites and online sources have been included in the project.
