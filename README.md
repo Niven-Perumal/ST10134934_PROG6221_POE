@@ -27,8 +27,8 @@ This project was created to be a console-based Visual Studio recipe storage appl
     *	Select “Download Zip”
 * **How to open/run the project**:
     *	Unzip/extract all files from the downloaded zip folder.
-    *	Open the file named “ST10134934_PROG6221_PartOne.”
-    *	Either select ST10134934_PROG6221_PartOne.sln to open and run the project or open the project using Visual Studio.
+    *	Open the file named “ST10134934_PROG6221_PartOne.” or “ST10134934_PROG6221_PartTwo.”
+    *	Either select ST10134934_PROG6221_PartOne.sln or ST10134934_PROG6221_PartTwo.sln to open and run the project or open the project using Visual Studio.
 
 # **How to use the Recipe Application Part One**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
