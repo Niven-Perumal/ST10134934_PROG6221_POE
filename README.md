@@ -92,7 +92,7 @@ Part One - https://www.loom.com/share/7da5a9104c2c417789fe20a43777944a?sid=ed724
 Part Two -
 
 # **Changes made to Part Two based on feedback from Part One**
-Based on feedback, the Part Two recipe console application will include the functionality from Part One with the following additional features/functionalities:
+* **Based on feedback, the Part Two recipe console application will include the functionality from Part One with the following additional features/functionalities:**
         - The user can now enter multiple recipes instead of being limited to one.
         -	The user can enter a name for each recipe.
         -	When viewing a recipe, the user can optionally display all recipes alphabetically by name.
@@ -100,7 +100,7 @@ Based on feedback, the Part Two recipe console application will include the func
         -	For each ingredient, the user can enter the calorie amount and food group the ingredient is in:
         -	The application will automatically calculate and display the total calories of all the ingredients in a recipe.
         -	The application will notify the user when the total calorie of a recipe is greater than 300.
-Non-functional requirements:
+* **Non-functional requirements:**
         -	The application will now use generic collections (Lists) to store the recipes, ingredients, and steps, and no longer use array lists.
         -	The application will now use a delegate to notify the user when a recipe calorie count exceeds 300.
         -	The application will now include a unit test for the total calorie calculation.
