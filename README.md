@@ -6,7 +6,7 @@ PROG6221 Recipe Storage Application
 - [Purpose of project](#purposeofproject)
 - [How to compile and run the application](#howtocompileandruntheapplication)
 - [How to use the Recipe Application Part One](#howtousetherecipeapplicationpartone)
-- [How to use the Updated Recipe Application Part Two].(#howtousetheupdatedrecipeapplicationparttwo)
+- [How to use the Updated Recipe Application Part Two](#howtousetheupdatedrecipeapplicationparttwo).
 - [GitHub repository link](#gitHubrepositorylink)
 - [Loom video link for demo of application](#loomvideolinkfordemoofapplication)
 - [Contribution](#contribution)
