@@ -9,6 +9,7 @@ PROG6221 Recipe Storage Application
 - [How to use the Updated Recipe Application Part Two](#howtousetheupdatedrecipeapplicationparttwo).
 - [GitHub repository link](#gitHubrepositorylink)
 - [Loom video link for demo of application](#loomvideolinkfordemoofapplication)
+- [Changes made to Part Two based on feedback from Part One](#changesmadetoparttwobasedonfeedbackfrompartone).
 - [Contribution](#contribution)
 - [Licenses](#licenses)
 
