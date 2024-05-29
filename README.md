@@ -5,7 +5,8 @@ PROG6221 Recipe Storage Application
 # **Table of Contents**
 - [Purpose of project](#purposeofproject)
 - [How to compile and run the application](#howtocompileandruntheapplication)
-- [How to use the Recipe Application](#howtousetheRecipeApplication)
+- [How to use the Recipe Application Part One](#howtousetherecipeapplicationpartone)
+- [How to use the Updated Recipe Application Part Two].(#howtousetheupdatedrecipeapplicationparttwo)
 - [GitHub repository link](#gitHubrepositorylink)
 - [Loom video link for demo of application](#loomvideolinkfordemoofapplication)
 - [Contribution](#contribution)
@@ -56,7 +57,7 @@ After the application/project has been opened in Visual Studio the following sho
     * White message – Main menu for the user and other prompts for user input.
  
 
-# **How to use the Updated Recipe Application (Part Two)**
+# **How to use the Updated Recipe Application Part Two**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
 -	**Follow the menu prompts and select a number suitable number listed (1-7)**
     *	**1 – Add Recipe:**
