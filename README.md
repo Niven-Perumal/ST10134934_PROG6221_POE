@@ -93,7 +93,7 @@ Part Two -
 
 # **Changes made to Part Two based on feedback from Part One**
 * **Based on feedback, the Part Two recipe console application will include the functionality from Part One with the following additional features/functionalities:**
-        - The user can now enter multiple recipes instead of being limited to one.
+        -   The user can now enter multiple recipes instead of being limited to one.
         -	The user can enter a name for each recipe.
         -	When viewing a recipe, the user can optionally display all recipes alphabetically by name.
         -	The user can search for a recipe to display.
