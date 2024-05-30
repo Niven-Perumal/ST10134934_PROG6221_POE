@@ -89,7 +89,7 @@ https://github.com/Niven-Perumal/ST10134934_PROG6221_PartOne.git
 
 # **Loom video link for demo of application Part One and Two**
 Part One - https://www.loom.com/share/7da5a9104c2c417789fe20a43777944a?sid=ed724ffb-eb1e-4045-8f8c-efefbca1ee87
-Part Two -
+Part Two - https://www.loom.com/share/387476e009cf49f8abbcf5c0e455c272?sid=aba33cbc-b958-404a-9780-82cd0abee98a
 
 # **Changes made to Part Two based on feedback from Part One**
 * **Based on feedback, the Part Two recipe console application will include the functionality from Part One with the following additional features/functionalities:**
