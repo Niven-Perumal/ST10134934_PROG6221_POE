@@ -2,8 +2,9 @@
 
 namespace ST10134934_PROG6221_PartOne
 {
-     class Program
+    class Program
     {
+
         static void Main(string[] args)
         {
             //Values that are declared to be used
@@ -14,21 +15,31 @@ namespace ST10134934_PROG6221_PartOne
             int userIngAmt = 0, ingNum = 0;
 
             double sumOne = 0.0;
+            double sumTwo = 0.0;
 
-            //ArrayLists declared that will be used to store user input
-            ArrayList ingNameArrayList = new ArrayList();
-            ArrayList ingQuanArrayList = new ArrayList();
-            ArrayList ingUnitArrayList = new ArrayList();
-            ArrayList recipeNameArrayList = new ArrayList();
-            ArrayList stepArrayList = new ArrayList();
+            double ingCal = 0.0;
 
-            ArrayList scaledIngQuanArrayList = new ArrayList();
+
+
+            //Gerneric collection List<T>
+            List<string> ingNameList = new List<string>();
+            List<double> ingQuanList = new List<double>();
+            List<string> ingUnitList = new List<string>();
+            List<string> recipeNameList = new List<string>();
+            List<string> stepList = new List<string>();
+            List<double> scaledIngQuanList = new List<double>();
+
+            List<double> ingCalList = new List<double>();
+            List<string> ingFoodGroupList = new List<string>();
+
+            List<double> scaledCalList = new List<double>();
+
 
             //object to call methods from Recipe.cs
             Recipe recipe = new Recipe();
 
             // this loop will ensure the app runs until exit is selected
-            while (UserOp != 6)
+            while (UserOp != 7)
             {
                 try
                 {
@@ -39,10 +50,11 @@ namespace ST10134934_PROG6221_PartOne
                     Console.WriteLine("----------------------------------------");
                     Console.WriteLine("1 - Add Recipe");
                     Console.WriteLine("2 - View Recipe");
-                    Console.WriteLine("3 - Scale Recipe");
-                    Console.WriteLine("4 - Reset Ingredients to original amount");
-                    Console.WriteLine("5 - Delete Recipe");
-                    Console.WriteLine("6 - Exit program");
+                    Console.WriteLine("3 - Display all Recipes in Alphabetical order");
+                    Console.WriteLine("4 - Scale Recipe");
+                    Console.WriteLine("5 - Reset Ingredients to original amount");
+                    Console.WriteLine("6 - Delete Recipe");
+                    Console.WriteLine("7 - Exit program");
                     Console.WriteLine("----------------------------------------");
 
 
@@ -54,22 +66,25 @@ namespace ST10134934_PROG6221_PartOne
                     {
 
                         case 1:
-                            recipe.addRecipe(recipeName, ingName, ingQuan, unitMea, userIngAmt, ingNum, recipeNameArrayList, ingNameArrayList, ingQuanArrayList, ingUnitArrayList);
-                            recipe.stepsRecipe(userIngAmt, ingNum, stepArrayList, recipeNameArrayList);
+                            recipe.addRecipe(recipeName, ingName, ingQuan, unitMea, userIngAmt, ingNum, recipeNameList, ingNameList, ingQuanList, ingUnitList, ingCalList, ingFoodGroupList, ingCal);
+                            recipe.stepsRecipe(userIngAmt, ingNum, stepList, recipeNameList);
                             break;
                         case 2:
-                            recipe.viewRecipe(scaledIngQuanArrayList, sumOne, userIngAmt, ingNum, recipeNameArrayList, ingNameArrayList, ingQuanArrayList, ingUnitArrayList, stepArrayList);
+                            recipe.viewRecipe(scaledIngQuanList, sumOne, userIngAmt, ingNum, recipeNameList, ingNameList, ingQuanList, ingUnitList, stepList, ingCalList, ingFoodGroupList, scaledCalList);
                             break;
                         case 3:
-                            recipe.scaleRecipe(scaledIngQuanArrayList, sumOne, recipeNameArrayList, ingNameArrayList, ingQuanArrayList, ingUnitArrayList);
+                            recipe.displayAlphaOrder(scaledIngQuanList, sumOne, userIngAmt, ingNum, recipeNameList, ingNameList, ingQuanList, ingUnitList, stepList, ingCalList, ingFoodGroupList, scaledCalList);
                             break;
                         case 4:
-                            recipe.resetRecipe(scaledIngQuanArrayList, ingName, ingQuan, unitMea, userIngAmt, ingNum, ingNameArrayList, ingQuanArrayList, ingUnitArrayList, stepArrayList);
+                            recipe.scaleRecipe(sumTwo, scaledIngQuanList, sumOne, recipeNameList, ingNameList, ingQuanList, ingUnitList, scaledCalList, ingCalList);
                             break;
                         case 5:
-                            recipe.deleteRecipe(scaledIngQuanArrayList, recipeNameArrayList, ingNameArrayList, ingQuanArrayList, ingUnitArrayList, stepArrayList);
+                            recipe.resetRecipe(scaledIngQuanList, ingName, ingQuan, unitMea, userIngAmt, ingNum, ingNameList, ingQuanList, ingUnitList, stepList, recipeNameList, scaledCalList, ingCalList);
                             break;
                         case 6:
+                            recipe.deleteRecipe(scaledIngQuanList, sumOne, userIngAmt, ingNum, recipeNameList, ingNameList, ingQuanList, ingUnitList, stepList, ingCalList, ingFoodGroupList, scaledCalList);
+                            break;
+                        case 7:
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("----------------------------------------");
                             Console.WriteLine("Exit program selected goodbye!");
@@ -108,3 +123,9 @@ namespace ST10134934_PROG6221_PartOne
         }
     }
 }
+
+
+//Code attribution for changing text colour in app https://www.geeksforgeeks.org/c-sharp-how-to-change-foreground-color-of-text-in-console/
+//Code attribution for switch cases used in app menus https://www.geeksforgeeks.org/switch-statement-in-c-sharp/
+//Code attribution for delegrate https://www.geeksforgeeks.org/c-sharp-delegates/
+//Code attribuion for Lists https://www.geeksforgeeks.org/c-sharp-list-class/
