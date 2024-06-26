@@ -85,7 +85,7 @@ After the application/project has been opened in Visual Studio the following sho
  
 
 # **GitHub repository link**
-https://github.com/Niven-Perumal/ST10134934_PROG6221_PartOne.git
+https://github.com/Niven-Perumal/ST10134934_PROG6221_POE.git
 
 # **Loom video link for demo of application Part One and Two**
 Part One - https://www.loom.com/share/7da5a9104c2c417789fe20a43777944a?sid=ed724ffb-eb1e-4045-8f8c-efefbca1ee87
