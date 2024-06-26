@@ -113,15 +113,16 @@ https://github.com/Niven-Perumal/ST10134934_PROG6221_POE.git
 
 
 # **Changes made to Part Three based on feedback from Part Two**
+
 * **Based on feedback, the Part Three (Final) Recipe Storage/Tracker application will include the functionality from Part One and Two with the following additional features/functionalities:**
-        - The Application will no longer be a command/console-based visual studio application. Now the application will use a GUI (Graphical User Interface) built using WPF (Windows 
-          Presentation Foundation).
-        - Users can now navigate through various tabs to find their desired functions.
-        - Users can now view recipes before they scale them by factors of 0.5, 2, or 3.
-        - The user will be able to filter the alphabetical list of recipes by:
+    - The Application will no longer be a command/console-based visual studio application. Now the application will use a GUI (Graphical User Interface) built using WPF (Windows Presentation Foundation).
+    - Users can now navigate through various tabs to find their desired functions.
+    - Users can now view recipes before they scale them by factors of 0.5, 2, or 3.
+    - The user will be able to filter the alphabetical list of recipes by:
         - Entering any name of an ingredient from a recipe.
         - Selecting a food group that the recipe is in.
         - Selecting a maximum number of calories in a recipe.
+
 
 
 
