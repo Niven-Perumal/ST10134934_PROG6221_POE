@@ -18,17 +18,62 @@ PROG6221 Recipe Storage Application
 This project was created to be a console-based Visual Studio recipe storage application. This application allows you to easily keep track of your recipes and effortlessly perform functions such as add recipe ingredients, quantities, units of measurements, calories and steps, view the recipe ingredients, quantities, units of measurements, calories and steps in a clear format, scale the recipe ingredients depending on your quantity needs, reset the scaled recipe ingredients to their original values, delete a recipe stored in the application and exit the program. Additionally, to make recipe storage, management, and manipulation easier the user is provided with clear, user-friendly, and visually pleasing menu prompts that efficiently guide the user through the application and its functions.
 
 # **How to compile and run the application**
-* **Requirements to compile and run the project:**
-    *	Have Visual Studio installed.
-* **How to download the project onto your machine**:
-    *	Navigate to the GitHub repository using the projects repository link.
-    *	Select the green code tab on the repository home page.
-    *	Select on “Local” tab.
-    *	Select “Download Zip”
-* **How to open/run the project**:
-    *	Unzip/extract all files from the downloaded zip folder.
-    *	Open the file named “ST10134934_PROG6221_PartOne.” or “ST10134934_PROG6221_PartTwo.”
-    *	Either select ST10134934_PROG6221_PartOne.sln or ST10134934_PROG6221_PartTwo.sln to open and run the project or open the project using Visual Studio.
+# Software Requirements
+
+1. **Operating System:**
+   - Windows 7 SP1, Windows 8.1, or Windows 10 (most recent updates recommended). (Microsoft, 2024)
+
+2. **.NET Framework:**
+   - .NET Framework 4.5 or later (typically included in the application installer). (Microsoft, 2024)
+
+3. **Visual Studio:**
+   - Visual Studio 2017 or later (Community, Professional, or Enterprise editions). (Microsoft, 2024)
+   - .NET desktop development workload is installed.
+
+4. **Windows SDK:**
+   - Required version of the Windows SDK is installed (Visual Studio should install this as part of the .NET desktop development workload). (Microsoft, 2024)
+
+# Hardware Requirements
+
+1. **Processor:**
+   - 1.8 GHz or faster processor. (Microsoft, 2024)
+
+2. **Memory:**
+   - 2 GB of RAM or more (8 GB or more recommended). (Microsoft, 2024)
+
+3. **Disk Space:**
+   - Minimum of 20 GB of free disk space to install Visual Studio and related components. (Microsoft, 2024)
+
+4. **Display:**
+   - Minimum display resolution of 1280x720 (1920x1080 or higher recommended). (Microsoft, 2024)
+
+# Additional Requirements
+
+1. **Permissions:**
+   - Administrative rights may be required to install Visual Studio and the .NET Framework. (Microsoft, 2024)
+
+2. **Internet Connection:**
+   - Required for downloading Visual Studio, .NET Framework, and other updates. (Microsoft, 2024)
+
+# Steps to Set Up
+
+1. **Install Visual Studio:**
+   - Download and install Visual Studio from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/). (Microsoft, 2024)
+   - During installation, select the .NET desktop development workload. (Microsoft, 2024)
+
+2. **Install the .NET Framework:**
+   - If not installed, install the appropriate .NET Framework version. (Microsoft, 2024)
+
+# How to Open WPF Project and Run Application
+
+1. Navigate to the GitHub repository using the project's repository link.
+2. Select the green "Code" tab on the repository home page.
+3. Select the "Local" tab.
+4. Select "Download ZIP".
+5. Unzip/extract all files from the downloaded ZIP folder.
+6. Open the file named `ST10134934_PROG6221_PartOne`, `ST10134934_PROG6221_PartTwo`, or `ST10134934_PROG6221_PartThree`.
+7. Either select `ST10134934_PROG6221_PartOne.sln`, `ST10134934_PROG6221_PartTwo.sln`, or `ST10134934_PROG6221_PartThree.sln` to open and run the project or open the project using Visual Studio.
+
 
 # **How to use the Recipe Application Part One**
 After the application/project has been opened in Visual Studio the following should be done to interact with the recipe application's core features:
