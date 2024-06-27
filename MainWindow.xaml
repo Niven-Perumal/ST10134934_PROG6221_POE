@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10134934_PROG6221_PartThree"
         mc:Ignorable="d"
+        Background="#FFE8F5E9"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl TabStripPlacement="Left" Background="#FFE8F5E9">
